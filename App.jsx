@@ -12,7 +12,7 @@ export default function App() {
       <MemoList />
       <MemoList />
       <MemoList />
-      <CircleButton />
+      <CircleButton>+</CircleButton>
     </View>
   );
 }
