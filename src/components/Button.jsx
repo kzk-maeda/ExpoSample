@@ -1,13 +1,21 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import {
+  View, Text, StyleSheet,
+} from 'react-native';
+import { string } from 'prop-types';
 
-export default function Button() {
+export default function Button(props) {
+  const { label } = props;
   return (
     <View style={styles.bottunContainer}>
-      <Text style={styles.buttonLabel}>Submit</Text>
+      <Text style={styles.buttonLabel}>{label}</Text>
     </View>
   );
 }
+
+Button.propTypes = {
+  label: string.isRequired,
+};
 
 const styles = StyleSheet.create({
   bottunContainer: {
