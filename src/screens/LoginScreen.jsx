@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  View, Text, TextInput, StyleSheet
+  View, Text, TextInput, StyleSheet,
 } from 'react-native';
 
 import AppBar from '../components/AppBar';
@@ -28,11 +28,11 @@ export default function LogInScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#F0F4F8'
+    backgroundColor: '#F0F4F8',
   },
   inner: {
     paddingHorizontal: 27,
-    paddingVertical: 24
+    paddingVertical: 24,
   },
   title: {
     fontSize: 24,
@@ -74,6 +74,6 @@ const styles = StyleSheet.create({
     color: '#467FD3',
   },
   footer: {
-    flexDirection: 'row'
+    flexDirection: 'row',
   },
 });
